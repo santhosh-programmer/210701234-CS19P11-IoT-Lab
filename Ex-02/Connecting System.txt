@@ -1,0 +1,14 @@
+Problem 
+You have everything that you need for your Raspberry Pi, and you want to connect it all together. 
+
+Solution 
+Unless you are embedding your Raspberry Pi in a project or using it as a media center, you need to attach a keyboard, mouse, monitor, and probably a WiFi dongle, unless you have a Raspberry Pi 3. 
+
+Discussion 
+The Raspberry Pi is perfectly happy with pretty much any keyboard or mouse, wired or wireless. The exception to this is Bluetooth wireless keyboards and mice, which will not work with the Raspberry Pi. 
+If you have an older Raspberry Pi or a model A or A+ and run out of USB sockets, then you will also need a USB hub.
+Start by inserting the micro SD card into the dedicated micro SD card slot on the Raspberry Pi. This is located on the underside of the Pi. 
+If you need an internet connection, plug in your Ethernet cable. (Optional) 
+Then plug in your HDMI cable. The other end of the cable should be plugged into your TV or Monitor. If you are using a TV, make sure you have the correct input selected. Make sure your TV/Monitor is turned on.
+Now we need to plug in our Keyboard and Mouse into the USB ports on the Raspberry Pi.
+Once you have double checked everything has been connected properly, its time to plug in your micro usb power supply. With the power supply plugged in, turn on the power supply.

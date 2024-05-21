@@ -1,0 +1,14 @@
+Problem 
+To access Raspberry Pi GPIO, we can use several GPIO libraries. 
+
+Solution 
+If you are working with Python, Raspbian will have already installed the RPi.GPIO library to access Raspberry Pi GPIO.
+
+Discussion 
+You can verify the RPi.GPIO library from a Python terminal by importing the RPi.GPIO module,
+pi@raspberrypi ~ $ wget 
+https://pypi.python.org/packages/source/R/RPi.GPIO/RPi.GPIO 
+0.5.11.tar.gz 
+pi@raspberrypi ~ $ tar -xvzf RPi.GPIO-0.5.11.tar.gz 
+pi@raspberrypi ~ $ cd RPi.GPIO-0.5.11/ 
+pi@raspberrypi ~ $ sudo python setup.py install

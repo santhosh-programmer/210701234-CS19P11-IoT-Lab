@@ -1,0 +1,18 @@
+Problem 
+You want to know how to connect an LED to the Raspberry Pi. 
+
+Solution 
+Connect an LED to one of the GPIO pins using a 470 or 1k series resistor to limit the current. To make this recipe, you will need: 
+ Breadboard and jumper wires 
+ 470 resistor 
+ LED 
+
+Discussion
+Start a Python console from the Terminal with superuser access and enter these commands: 
+pi@raspberrypi ~ $ sudo python 
+>>> import RPi.GPIO as GPIO 
+>>> GPIO.setmode(GPIO.BCM) 
+>>> GPIO.setup(18, GPIO.OUT) 
+>>> GPIO.output(18, True) 
+>>> GPIO.output(18, False) 
+This will turn your LED on and off.

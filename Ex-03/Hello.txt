@@ -1,0 +1,24 @@
+Problem 
+Run your first python program Hello World! 
+
+Solution 
+Things you will need: 
+Raspberry Pi + SD Card 
+Keyboard + Mouse 
+Monitor + HDMI Cable 
+Power Supply 
+
+Discussion 
+1. Start by opening a Terminal, by click the icon in the taskbar. 2. Start by creating a new directory, this is where we are going to store all our scripts for this series of worksshop, make a directory called iotworkshop: 
+mkdir iotworkshop 
+3. We can use the command ls -l to view the contents of the current directory: 
+ls l 
+4. You should be able to see the directory you created. 5. Now we need to change our current directory to the newly created iotworkshop directory: 
+cd iotworkshop 
+6. We can use the command nano, to open it in a text editor. sudo nano helloworld.py 
+7. Now enter the following code: 
+#!/usr/bin/python 
+print "Hello World!" 
+8. Press ctrl+X to exit, you will be prompted to save the file, simply press Y, and then be you will be prompted to give the file a name. 
+9. It will automatically use its current name helloworld.py, so just hit enter to accept. 
+10.To execute your script, simply enter the following command: sudo python helloworld.py

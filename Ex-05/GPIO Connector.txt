@@ -1,0 +1,19 @@
+Problem 
+You need to connect electronics to the GPIO connector, but first you need to know more about what all the pins do. 
+
+Solution
+At the top of the connector, there are 3.3V and 5V power supplies. The GPIO uses 3.3V for all inputs and outputs. 
+Any pin with a number next to it can act as a GPIO pin. Those that have another name after them also have some other special purpose, so 14 TXD and 15 RXD are the transmit and receive pins of the serial interface. 
+SDA and SCL form the I2C interface, and MOSI, MISO, and SCKL from the SPI interface. 
+Figure 1 shows the current 40-pin layout, which is the same for all 40-pin GPIO Raspberry Pi models.
+The top 26 pins are the same as the 26 pins of the original Raspberry Pi Model B revision 2. 
+This allows the 40-pin Raspberry Pi models to use hardware and software designed for the earlier 26-pin Raspberry Pi designs. 
+The extra pins of the 40-pin connector are made up of three useful extra GND connections and 9 GPIO pins. 
+The ID_SD and ID_SC pins are intended for use in communicating with a special serial memory chip, which can be included on interface boards that conform to the Hardware At Top (HAT) standard and allows the Raspberry Pi to identify the board.
+
+Discussion 
+Working out which pin is which on a Raspberry Pi is quite error prone if you rely on counting down the pin connector to find the pin you need. A better way of finding the right pin is to use a GPIO template like the Raspberry Leaf shown in Figure 3. 
+This paper template fits over the GPIO pins telling you which is which. Other GPIO templates include the Pi GPIO Reference Board. 
+The Hardware At Top standard is an interface standard that you can use with the Raspberry Pi 2, B+ and A+. This standard does not in any way stop you from just using GPIO pins directly.
+However, interface boards that conform to the HAT standard can call themselves HATs and differ from regular Raspberry Pi interface boards in that a HAT must contain a little Electrically Erasable Programmable Read-Only Memory (EEPROM) chip that is used to identify the HAT so that ultimately the Raspberry Pi can auto 
+install necessary software. At the time of writing, HATs have not quite met that level of sophistication, but the idea is a good one. The pins ID_SD and ID_SC are used to communicate with a HAT EEPROM. 

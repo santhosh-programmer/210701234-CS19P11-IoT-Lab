@@ -1,0 +1,16 @@
+Problem 
+This tutorial will show you the process of installing NOOBs on to a SD card, ready for you to plug into your Pi and to select an Operating System. 
+
+Solution 
+The following steps were performed on a Windows computer. The steps may vary if you are using Linux or a Mac, but the principle will be the same. 
+First we need to prepare our SD card. To do this, we will use a piece of software called SD Formatter, by SD Association. If you haven't already got this software, you will need to download and install it. 
+Plug your SD card into your computer and load up the SD Formatter software. 
+Make sure the correct drive letter for your SD card has been selected from the drop down. 
+Once you have selected the drive letter, click on the "Options" button, and select "ON" from the "FORMAT SIZE ADJUSTMENT" dropdown. 
+Now click the format button and click "OK" on the prompts.
+Your SD card has now been formatted and is ready to load NOOBs on to.
+Head over to the Raspberry Pi Foundation Download page and select NOOBS. 
+Then pick a NOOBS version. We recommend the full NOOBS download, unless you want to install an OS other than Raspbian 
+Once the download has complete, you'll need to extract the files from the download .zip file.
+With the files extracted, you now need to copy them over to your formatted SD card.
+And that's it! NOOBS has now been loaded on to your SD Card ready for you to plug into your Pi.

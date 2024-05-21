@@ -1,0 +1,17 @@
+Problem 
+How to make Python programs executable. 
+
+Solution 
+Normally, in order to run a Python program you have to tell the Python software to open the file. However it is possible to execute the file without having to call upon Python first. This allows you to call upon your own programs (that you created in Python) at the terminal by simply typing it's name.
+
+Discussion 
+First you need to tell Linux to mark your Python file as executable, which means that the file is a program. For this example the target file to be made executable will be called helloworld.py. When you come to doing it yourself simply replace this with your own file name. We use the chmod +x command to make a file executable. In the terminal type the following: 
+chmod +x helloworld.py 
+You can now try running the program directly by typing: ./helloworld.py 
+Even though you didn't call upon Python the program should still run the same as if you'd typed python helloworld.py. The program can only be run by calling it with it's full location /home/pi/example.py or from the current directory by using ./ as the location. 
+To make the file accessible in the same way as any other command in the terminal, it needs to be copied (using the command cp) to /usr/local/bin with the following command: 
+sudo cp helloworld.py /usr/local/bin/ 
+With the file now located in /usr/local/bin it can be executed from any directory by simply typing it's name. Try changing to another directory and then run the program again by typing the following: helloworld.py 
+To make your custom-made programs seem more like native utilities, you can rename (using the command mv) them to remove the .py file extension. To change helloworld.py in this way type the following line at the terminal: 
+sudo mv /usr/local/bin/helloworld.py /usr/local/bin/helloworld 
+Now the program can be run by simply typing example at the terminal!
